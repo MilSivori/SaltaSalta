@@ -1,0 +1,45 @@
+/* ----------==========MEDIA QUERY==========----------- */
+
+@media only screen and (min-width: 768px) {
+    /* carousel */
+    .heightR {
+        height: 50vh;
+        object-fit: cover;
+    }
+    /* footer main */
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+        grid-template-areas: $areaTablet;
+    }
+    #wasap {
+        bottom: 22rem;
+        right: 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .heightR {
+        height: 70vh;
+        object-fit: cover;
+    }
+    footer {
+        grid-template-columns: 3fr 8fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas: $areaPC;
+    }
+    .flex {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    /* footer primer slot (imagen) */
+    footer div img {
+        padding: 4rem;
+    }
+    #wasap {
+        bottom: 20rem;
+        right: 20px;
+    }
+}

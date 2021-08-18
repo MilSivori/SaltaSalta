@@ -1,0 +1,67 @@
+/* ----------==========ANIMACION==========----------- */
+
+
+/* -----para el carousel----- */
+
+.zoomIn {
+    transform-origin: center center;
+    animation: zoom 12s ease-in;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+
+/* -----para la galeria----- */
+
+.agrandar {
+    transition: transform 1s;
+}
+
+.agrandar:hover {
+    transform: scale(1.05);
+}
+
+
+/* ZONA INFO EN INDEX animacion para las imagenes, tambien GALERIA */
+
+
+/* rotar clockwise */
+
+.CW {
+    transition: transform .8s ease-in-out;
+}
+
+.CW:hover {
+    transform: rotate(30deg);
+}
+
+
+/* rotar counterclockwise */
+
+.CCW {
+    transition: transform .8s ease-in-out;
+}
+
+.CCW:hover {
+    transform: rotate(-30deg);
+}
+
+
+/* boton links footer */
+
+.linkBtn {
+    transition: transform 1s ease-in-out;
+    color: white;
+}
+
+.linkBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

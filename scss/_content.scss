@@ -1,0 +1,87 @@
+/* ----------===========PARTE SUPERIOR=========--------- */
+
+.heroe {
+    background-image: url("../img/generales/heroe-comprimida.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* banner va en lugar de heroe en las paginas no index */
+
+.banner {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* ----------===========FIN PARTE SUPERIOR=========--------- */
+
+
+/* ----------===========CAROUSEL BOOTSRAP==========---------- */
+
+.heightR {
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* ----------===========TARJETAS PRODUCTOS==========---------- */
+
+.purpleBack {
+    background-color: $transPurple;
+}
+
+.violetBack {
+    background-color: $transViolet;
+}
+
+.blueBack {
+    background-color: $transBlue;
+}
+
+.yellowBack {
+    background-color: $transYellow;
+}
+
+.orangeBack {
+    background-color: $transOrange;
+}
+
+.altoCard {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ----------=========== MOD IMAGENES ==========---------- */
+
+.imagen {
+    padding: 0.8rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gif {
+    height: 300px;
+    object-fit: fill;
+}
+
+
+/* ----------=========== BOTON WHATSAPP ==========---------- */
+
+#wasap {
+    position: fixed;
+    bottom: 142px;
+    right: 20px;
+    z-index: 1;
+}
+
+#wasap:hover {
+    opacity: 1
+}

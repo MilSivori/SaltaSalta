@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway&display=swap');
+
+/*FUENTES
+font-family: 'Lobster Two', cursive;
+
+font-family: 'Raleway', sans-serif;
+*/
+
+
+/* MI PALETA DE COLORES----DATA PARA TENER A MANO
+
+Purpura rgba(165, 69, 104, 1);
+Violeta rgba(72, 61, 140, 1);
+Azul rgba(30, 58, 114, 1);
+Anarillo rgba(242, 142, 55, 1);
+Naranja rgba(216, 76, 26, 1);
+
+*/
+
+
+/*----------GENERAL---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4158D0;
+    background-image: linear-gradient(50deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+p,
+a {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: 'Lobster Two', cursive;
+    color: linen;
+}
+
+
+/* ----------===========PARTE SUPERIOR=========--------- */
+
+.heroe {
+    background-image: url("../img/generales/heroe-comprimida.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* banner va en lugar de heroe en las paginas no index */
+
+.banner {
+    object-fit: cover;
+    width: 100%;
+}
+
+nav {
+    background-color: rgba(165, 69, 104, 0.2);
+}
+
+nav ul li a {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* carousel */
+
+.heightR {
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* cards */
+
+.purpleBack {
+    background-color: rgba(165, 69, 104, 0.3);
+}
+
+.violetBack {
+    background-color: rgba(72, 61, 140, 0.3);
+}
+
+.blueBack {
+    background-color: rgba(30, 58, 114, 0.3);
+}
+
+.yellowBack {
+    background-color: rgba(242, 142, 55, 0.3);
+}
+
+.orangeBack {
+    background-color: rgba(216, 76, 26, 0.3);
+}
+
+.altoCard {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* imagenes */
+
+.imagen {
+    padding: 0.8rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gif {
+    height: 300px;
+    object-fit: fill;
+}
+
+
+/* boton whatsapp */
+
+#wasap {
+    position: fixed;
+    bottom: 142px;
+    right: 20px;
+    z-index: 1;
+}
+
+#wasap:hover {
+    opacity: 1
+}
+
+
+/* --------==========footer==========---------- */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* footer main */
+
+footer {
+    background-color: rgba(30, 58, 114, 1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+    grid-template-areas: "logo" "info" "redes" "legal";
+}
+
+footer div {
+    padding: 10px 0 10px 0;
+}
+
+
+/* ---===footer primer slot (imagen===---)*/
+
+.logo {
+    grid-area: logo;
+    background-color: rgb(46, 82, 153);
+}
+
+footer div img {
+    margin: auto;
+    padding: 4rem 4rem 0 4rem;
+    width: 100%;
+    max-width: max-content;
+}
+
+
+/* ---===footer segundo slot (contacto y boton)===---*/
+
+.info {
+    grid-area: info;
+    background-color: rgb(46, 82, 153);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div span {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer div p {
+    text-align: center;
+}
+
+
+/* ---===boton contacto===---*/
+
+.myBtn {
+    background-color: rgba(30, 58, 114, 1);
+    height: 50px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 3px;
+    transition: background 1s;
+}
+
+.myBtn:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+footer div button a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+footer div button a:hover {
+    color: black;
+}
+
+
+/* ---===footer tercer slot (redes)===---*/
+
+.redes {
+    grid-area: redes;
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div ul li {
+    padding-right: 20px;
+    font-size: 2rem;
+}
+
+
+/* ---===footer cuarto slot (legales)===--- */
+
+.legal {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    grid-area: legal;
+}
+
+div.legal p {
+    font-family: 'Raleway', sans-serif;
+    font-size: .8em;
+}
+
+
+/* ----------==========ANIMACION==========----------- */
+
+
+/* -----para el carousel----- */
+
+.zoomIn {
+    transform-origin: center center;
+    animation: zoom 12s ease-in;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+
+/* -----para la galeria----- */
+
+.agrandar:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    transition: 3s;
+}
+
+.bounce:hover {
+    animation: bouncy 3s ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+@keyframes bouncy {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/* ZONA INFO EN INDEX animacion para las imagenes, tambien GALERIA */
+
+
+/* rotar clockwise */
+
+.CW:hover {
+    animation: roteishon 3s ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes roteishon {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* rotar counterclockwise */
+
+.CCW:hover {
+    animation: roteishon- 3s ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes roteishon- {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* ----------==========MEDIA QUERY==========----------- */
+
+@media only screen and (min-width: 768px) {
+    /* carousel */
+    .heightR {
+        height: 50vh;
+        object-fit: cover;
+    }
+    /* footer main */
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+        grid-template-areas: "logo info" "redes redes" "legal legal";
+    }
+    #wasap {
+        bottom: 22rem;
+        right: 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .heightR {
+        height: 70vh;
+        object-fit: cover;
+    }
+    footer {
+        grid-template-columns: 3fr 8fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas: "logo info redes" "legal legal legal";
+    }
+    .flex {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    /* footer primer slot (imagen) */
+    footer div img {
+        padding: 4rem 4rem 4rem 4rem;
+    }
+    #wasap {
+        bottom: 20rem;
+        right: 20px;
+    }
+}

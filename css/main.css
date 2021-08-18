@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway&display=swap");
+/*----------GENERAL---------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background-color: #4158D0;
+  background-image: linear-gradient(50deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); }
+
+p,
+a {
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-family: "Lobster Two", cursive;
+  color: #f5ece4; }
+
+/* ----------===========NAVBAR=========--------- */
+nav {
+  background-color: rgba(165, 69, 104, 0.333333); }
+  nav ul li a {
+    font-family: "Raleway", sans-serif; }
+
+/* ----------===========PARTE SUPERIOR=========--------- */
+.heroe {
+  background-image: url("../img/generales/heroe-comprimida.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* banner va en lugar de heroe en las paginas no index */
+.banner {
+  object-fit: cover;
+  width: 100%; }
+
+/* ----------===========FIN PARTE SUPERIOR=========--------- */
+/* ----------===========CAROUSEL BOOTSRAP==========---------- */
+.heightR {
+  height: 350px;
+  object-fit: cover; }
+
+/* ----------===========TARJETAS PRODUCTOS==========---------- */
+.purpleBack {
+  background-color: rgba(165, 69, 104, 0.333333); }
+
+.violetBack {
+  background-color: rgba(72, 61, 140, 0.333333); }
+
+.blueBack {
+  background-color: rgba(30, 58, 114, 0.333333); }
+
+.yellowBack {
+  background-color: rgba(242, 142, 55, 0.333333); }
+
+.orangeBack {
+  background-color: rgba(216, 76, 26, 0.333333); }
+
+.altoCard {
+  height: 400px;
+  width: 100%;
+  object-fit: cover; }
+
+/* ----------=========== MOD IMAGENES ==========---------- */
+.imagen {
+  padding: 0.8rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.gif {
+  height: 300px;
+  object-fit: fill; }
+
+/* ----------=========== BOTON WHATSAPP ==========---------- */
+#wasap {
+  position: fixed;
+  bottom: 142px;
+  right: 20px;
+  z-index: 1; }
+
+#wasap:hover {
+  opacity: 1; }
+
+/* ----------========== INICIO FOOTER ==========------------ */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/* footer main */
+footer {
+  background-color: #1e3a72;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4;
+  grid-template-areas: "logo" "info" "redes" "legal"; }
+  footer div {
+    padding: 10px 0 10px 0; }
+    footer div img {
+      margin: auto;
+      padding: 4rem 4rem 0 4rem;
+      width: 100%;
+      max-width: max-content; }
+    footer div h3 {
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      text-align: center; }
+    footer div p {
+      text-align: center; }
+    footer div button a {
+      text-decoration: none;
+      padding: 20px; }
+    footer div button a:hover {
+      color: black; }
+    footer div ul {
+      list-style: none; }
+      footer div ul li {
+        padding-right: 20px;
+        font-size: 2rem; }
+
+/* ---===footer primer slot (imagen)===---*/
+.logo {
+  grid-area: logo;
+  background-color: #2e5299; }
+
+/* ---===footer segundo slot (contacto y boton)===---*/
+.info {
+  grid-area: info;
+  background-color: #2e5299;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+/* ---===boton contacto===---*/
+.myBtn {
+  background-color: #1e3a72;
+  height: 50px;
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+  transition: background 1s; }
+
+.myBtn:hover {
+  background: white;
+  cursor: pointer;
+  color: black;
+  background-color: white; }
+
+/* ---===footer tercer slot (redes)===---*/
+.redes {
+  grid-area: redes; }
+
+/* ---===footer cuarto slot (legales)===--- */
+.legal {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  grid-area: legal; }
+
+div.legal p {
+  font-family: "Raleway", sans-serif;
+  font-size: .8em; }
+
+/* ----------==========ANIMACION==========----------- */
+/* -----para el carousel----- */
+.zoomIn {
+  transform-origin: center center;
+  animation: zoom 12s ease-in; }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.4); } }
+
+/* -----para la galeria----- */
+.agrandar {
+  transition: transform 1s; }
+
+.agrandar:hover {
+  transform: scale(1.05); }
+
+/* ZONA INFO EN INDEX animacion para las imagenes, tambien GALERIA */
+/* rotar clockwise */
+.CW {
+  transition: transform .8s ease-in-out; }
+
+.CW:hover {
+  transform: rotate(30deg); }
+
+/* rotar counterclockwise */
+.CCW {
+  transition: transform .8s ease-in-out; }
+
+.CCW:hover {
+  transform: rotate(-30deg); }
+
+/* boton links footer */
+.linkBtn {
+  transition: transform 1s ease-in-out;
+  color: white; }
+
+.linkBtn:hover {
+  cursor: pointer;
+  transform: scale(1.2); }
+
+/* ----------==========MEDIA QUERY==========----------- */
+@media only screen and (min-width: 768px) {
+  /* carousel */
+  .heightR {
+    height: 50vh;
+    object-fit: cover; }
+  /* footer main */
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-template-areas: "logo info" "redes redes" "legal legal"; }
+  #wasap {
+    bottom: 22rem;
+    right: 25px; } }
+
+@media only screen and (min-width: 1200px) {
+  .heightR {
+    height: 70vh;
+    object-fit: cover; }
+  footer {
+    grid-template-columns: 3fr 8fr 1fr;
+    grid-template-rows: 2;
+    grid-template-areas: "logo info redes" "legal legal legal"; }
+  .flex {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; }
+  /* footer primer slot (imagen) */
+  footer div img {
+    padding: 4rem; }
+  #wasap {
+    bottom: 20rem;
+    right: 20px; } }

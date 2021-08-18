@@ -1,0 +1,23 @@
+//FUENTES
+$mainFont:'Raleway',
+sans-serif;
+$secondaryFont: 'Lobster Two',
+cursive;
+//COLORES
+$purple:rgba(165, 69, 104, 1);
+$violet:rgba(72, 61, 140, 1);
+$blue:rgba(30, 58, 114, 1);
+$yellow:rgba(242, 142, 55, 1);
+$orange:rgba(216, 76, 26, 1);
+$bone: rgb(245, 236, 228);
+$celeste: rgb(46, 82, 153);
+//COLORES TRANSPARENTES
+$transPurple: rgba(165, 69, 104, 1/3);
+$transViolet: rgba(72, 61, 140, 1/3);
+$transBlue: rgba(30, 58, 114, 1/3);
+$transYellow: rgba(242, 142, 55, 1/3);
+$transOrange: rgba(216, 76, 26, 1/3);
+//distribucion template areas
+$areaMobile: "logo" "info" "redes" "legal";
+$areaTablet: "logo info" "redes redes" "legal legal";
+$areaPC: "logo info redes" "legal legal legal";

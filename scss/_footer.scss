@@ -1,0 +1,113 @@
+/* ----------========== INICIO FOOTER ==========------------ */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* footer main */
+
+footer {
+    background-color: $blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+    grid-template-areas: $areaMobile;
+    div {
+        padding: 10px 0 10px 0;
+        img {
+            margin: auto;
+            padding: 4rem 4rem 0 4rem;
+            width: 100%;
+            max-width: max-content;
+        }
+        h3 {
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        button a {
+            text-decoration: none;
+            padding: 20px;
+        }
+        button a:hover {
+            color: black;
+        }
+        ul {
+            list-style: none;
+            li {
+                padding-right: 20px;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+/* ---===footer primer slot (imagen)===---*/
+
+.logo {
+    grid-area: logo;
+    background-color: $celeste;
+}
+
+
+/* ---===footer segundo slot (contacto y boton)===---*/
+
+.info {
+    grid-area: info;
+    background-color: $celeste;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* ---===boton contacto===---*/
+
+.myBtn {
+    background-color: $blue;
+    height: 50px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 3px;
+    transition: background 1s;
+}
+
+.myBtn:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+
+/* ---===footer tercer slot (redes)===---*/
+
+.redes {
+    grid-area: redes;
+}
+
+
+/* ---===footer cuarto slot (legales)===--- */
+
+.legal {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    grid-area: legal;
+}
+
+div.legal p {
+    font-family: $mainFont;
+    font-size: .8em;
+}
