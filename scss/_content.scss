@@ -85,3 +85,31 @@
 #wasap:hover {
     opacity: 1
 }
+
+
+/* ----------=========== BOTON 404 ==========---------- */
+
+.errorBtn {
+    padding: 0 20px;
+    background-color: $transBlue;
+    height: 50px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 3px;
+    transition: background 1s;
+    a {
+        font-family: $mainFont;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.errorBtn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: $transPurple;
+    a {
+        color: black;
+    }
+}

@@ -85,6 +85,28 @@ nav {
 #wasap:hover {
   opacity: 1; }
 
+/* ----------=========== BOTON 404 ==========---------- */
+.errorBtn {
+  padding: 0 20px;
+  background-color: rgba(30, 58, 114, 0.333333);
+  height: 50px;
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+  transition: background 1s; }
+  .errorBtn a {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-weight: bold; }
+
+.errorBtn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(165, 69, 104, 0.333333); }
+  .errorBtn:hover a {
+    color: black; }
+
 /* ----------========== INICIO FOOTER ==========------------ */
 .flex {
   display: flex;
