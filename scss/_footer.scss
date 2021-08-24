@@ -81,13 +81,17 @@ footer {
     border-width: 1px;
     border-radius: 3px;
     transition: background 1s;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .myBtn:hover {
-    background: white;
     cursor: pointer;
     color: black;
     background-color: white;
+    border-color: black;
 }
 
 
