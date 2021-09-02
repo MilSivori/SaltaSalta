@@ -21,11 +21,16 @@
 /* -----para la galeria----- */
 
 .agrandar {
-    transition: transform 1s;
-}
-
-.agrandar:hover {
-    transform: scale(1.05);
+    display: inline-block;
+    overflow: hidden;
+    img {
+        display: block;
+        transition: transform 2s;
+    }
+    &:hover img {
+        transform: scale(1.3);
+        transform-origin: 50% 50%;
+    }
 }
 
 

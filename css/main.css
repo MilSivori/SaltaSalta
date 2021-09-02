@@ -26,7 +26,7 @@ nav {
 /* ----------===========PARTE SUPERIOR=========--------- */
 .heroe {
   background-image: url("../img/generales/heroe-comprimida.jpg");
-  height: 100vh;
+  height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,10 +209,14 @@ div.legal p {
 
 /* -----para la galeria----- */
 .agrandar {
-  transition: transform 1s; }
-
-.agrandar:hover {
-  transform: scale(1.05); }
+  display: inline-block;
+  overflow: hidden; }
+  .agrandar img {
+    display: block;
+    transition: transform 2s; }
+  .agrandar:hover img {
+    transform: scale(1.3);
+    transform-origin: 50% 50%; }
 
 /* ZONA INFO EN INDEX animacion para las imagenes, tambien GALERIA */
 /* rotar clockwise */
